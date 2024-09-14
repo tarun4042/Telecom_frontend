@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+/* Logo */
+.nav-logo h2 {
+    margin: 0;
+}
+
+/* Align buttons to the right */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.secondary-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Main Content */
+.my-4 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for the carousel */
+    height: 500px; /* Fixed height for the carousel */
+    margin: 0 auto; /* Center the carousel */
+}
+
+/* Make sure the images fit within the carousel size */
+.carousel-item img {
+    width: 100%; /* Take full width */
+    height: 100%; /* Take full height */
+    object-fit: cover; /* Ensures the image fits without stretching */
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-3 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Set background color or keep transparent */
+    width: 50px; /* Adjust width if needed */
+    height: 50px; /* Adjust height if needed */
+    background-size: 100%; /* Ensure proper sizing of icons */
+}
+
+/* Disable the default blue hover color */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Same background color on hover */
+    filter: none; /* Disable the blue color change */
+}
+
+/* Optional: Add additional styling if needed for icons */
+.carousel-control-prev-icon:active,
+.carousel-control-next-icon:active {
+    background-color: rgba(0, 0, 0, 0.5); /* Maintain consistency */
+    filter: none; /* Prevent blue color even on active */
+}
